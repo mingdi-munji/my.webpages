@@ -3,9 +3,28 @@
     <head>
         <title>css로 웹페이지 꾸미기</title>
         <style> @import url(css\ note.css);</style>
+        <link rel="stylesheet" href="web.css">
     </head>
     
     <body>
+        <div id="grid">
+        <h2><a href="intro.html">자기소개</a></h2> <!--저는 AI컴퓨터 정보학과 1학년 양민지입니다!-->
+            <hr>
+            
+                <div class="article">
+                    <ol id="name">
+                    <li><a href="things.html" >취미 및 좋아하는 것</a></li>
+                    <li><a href="vision.html" >목표/비전</a></li>
+                    <li><a href="character.html" >성격/특징</a></li>
+                    <li><a href="book.html" >읽었던 책 + 읽고싶은 책</a></li>
+                    <li><a href="webcoding note.html" >웹코딩 복습</a></li>
+                    <li><a href="css note.html" >css 복습</a></li>
+                    <li><a href="java script note.html" >java관련 내용복습</a></li>
+                    </ol>
+                </div>
+            
+        </ol>
+        <div class="article">
         <Header>
             <div><h3><strong>css3 스타일 시트로 작성하는 웹페이지</strong></h3>
     <pre>스타일 시트의 특징 
@@ -21,11 +40,11 @@
         <li>hr의 색깔 (나누는 선) 을 바꾸는 법 : 대괄호{}사이에  border: -px 색깔 ; 로 설정한다</li>
         <li>단어(span)의 색깔바꾸는 법 : 대괄호{}사이에 color: 색깔 front-size : - px ; 으로 설정한다.</li>
     </ul>
-    <ol>
+    <ul>
         <li>style 사이에 원하는 스타일 시트를 작성</li>
         <li>style 속성에 스타일 시트 작성</li>
         <li>스타일 시트를 작성하고 link 태그나 @import로 불러오기</li>
-    </ol>
+    </ul>
 
     <p>기타 관련 내용들 내용들을 주석으로 달때에는 <>안에 /*내용*/의 방법으로 내용에 필요한 주석물을 작성할 수 있다.<br>
         <> 내에 스타일속성(style ="")을 적용하는 경우 작성한 경우에서만 적용되고 다른 태그는 적용되지않는다.
@@ -78,11 +97,11 @@
     <ul>
         <li>색 (r,g,b)</li>
         - 색을 꾸미는 것은 3가지가 존재한다 
-        <ol>
+        <ul>
             <li>color:</li> -> 글자의 색을 변경한다.
             <li>background-color:</li> -> 배경색을 변경한다.
             <li>border-color:</li> -> 테두리의 색을 변경한다.
-        </ol><hr>
+        </ul><hr>
         <li>텍스트의 출력형태</li>
         <table> 
             <tr><th>text-indent:</th>
@@ -111,17 +130,7 @@
         <hr>
         **폰트이름에 공백이 존재하는 경우 ""으로 묶어서 표현한다.
     </ul><br></div>
-<div>
+</Header>
 </div>
-
-
-
-</ul>
-</class>
-                    <label id="코드정리"></label>
-                </form>
-            </article>
-        </section>
-        <p></p>
     </body>
 </html>
