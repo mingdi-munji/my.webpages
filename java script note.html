@@ -1,16 +1,29 @@
 <!DOCTYPE html>
 <html>
     <head>
+
         <title> java script관련 내용 정리</title>
-        <style>
-            div div{
-                display : inline-block;
-            }
-        </style>
+        <link rel="stylesheet" href="web.css">
     </head>
     <body>
-        <h2>자바스크립트 언어</h2>
-        <span>java script 언어: 조각난 소스형태로 html에 내장되어 소스파일이 컴파일 과정없이 인터브리터로 인해 바로 실행된다.(c언어의 단순화)
+        <h2><a href="intro.html" >자기소개</a></h2> <!--저는 AI컴퓨터 정보학과 1학년 양민지입니다!-->
+            <hr>
+            <div id="grid">
+                <div class="article">
+                    <ol id="name">
+                    <li><a href="things.html" >취미 및 좋아하는 것</a></li>
+                    <li><a href="vision.html" >목표/비전</a></li>
+                    <li><a href="character.html" >성격/특징</a></li>
+                    <li><a href="book.html" >읽었던 책 + 읽고싶은 책</a></li>
+                    <li><a href="webcoding note.html" >웹코딩 복습</a></li>
+                    <li><a href="css note.html" >css 복습</a></li>
+                    <li><a href="java script note.html" >java관련 내용복습</a></li>
+                    </ol>
+                </div>
+
+        <div class="article">
+        <ul><li><h2>자바스크립트 언어</h2></li>
+        <span> - java script 언어</span>: 조각난 소스형태로 html에 내장되어 소스파일이 컴파일 과정없이 인터브리터로 인해 바로 실행된다.(c언어의 단순화)
         <pre>                   ==> 자바스크립트의 script 태그는 head나 body내의 어디든지 들어갈 수 있다. 
                        또한 여러번의 작성이 가능하다.
         </pre>
@@ -24,6 +37,7 @@
                 <li>웹 서버와의 통신</li>
                 <li>웹 애플리케이션 작성</li>
             </ul>
+            <br>
         </div>
         <div style ="display:inline-block; position: absolute;" > <!--positon: 포지션 지정-->
             <h3>자바스크립트 코드의 위치</h3>
@@ -38,7 +52,7 @@
         <hr>
         
         <div><h3>이벤트</h3>
-            <ol type="1">
+            <ul type="1">
                 
                 <div style = "display: inline-block;">
                 <li ><strong>이벤트 리스너의 종류</strong>
@@ -50,15 +64,18 @@
                         <li>mousemove - 마우스가 움직일 때</li>
                     </ul> </div>
                     <div style = "display: inline-block;">
-                        <ol><li><strong> 이벤트 리스너의 예시</strong>
+                        <ul><li><strong> 이벤트 리스너의 예시</strong>
                             <ul><li>onmouse</li></ul>
                     </li> 
-                    </ol></div>            
-                </ol>
+                    </ul></div>            
+                </ul>
                 </li><br>
+                
+                <hr>
                 <li><strong>이벤트 리스너 사용법</strong>
                 </li>
-            </ol>
+            </ul>
         </div>
+    </div>
     </body>
 </html>
