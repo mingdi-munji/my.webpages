@@ -1,10 +1,36 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <link rel="stylesheet" href="web.css">
+        <style>
+            #grid #article{
+  padding-left:25px;
+  grid-template-columns: 300px 1fr 
+}
+#grid #name{
+  display: inline-block;
+}
+      </style>
+    </head>
     <body>
+        <h2><a href="intro.html" >자기소개</a></h2> <!--저는 AI컴퓨터 정보학과 1학년 양민지입니다!-->
+            <hr>
+            <div id="grid">
+                <div class="article">
+                    <ol id="name">
+                    <li><a href="things.html" >취미 및 좋아하는 것</a></li>
+                    <li><a href="vision.html" >목표/비전</a></li>
+                    <li><a href="character.html" >성격/특징</a></li>
+                    <li><a href="book.html" >읽었던 책 + 읽고싶은 책</a></li>
+                    <li><a href="webcoding note.html" >웹코딩 복습</a></li>
+                    <li><a href="css note.html" >css 복습</a></li>
+                    <li><a href="java script note.html" >java관련 내용복습</a></li>
+                    </ol>
+                </div>
         
-        <ul>
-            <li><h3>읽은 책</h3></li>
-            <ol>
+        <div class="article">
+        <ul id="name" style=" display:inline-block;" ><li><h3>읽은 책</h3></li>
+            <ul style="display:absolute;">
                 <li>우리는 작은 가게에서 어른이 되어가는 중입니다</li>
                 <li>알지 못하는 아이의 죽음</li>
                 <li>불편한 편의점</li>
@@ -18,13 +44,12 @@
                 <li>어느날, 내 죽음에 네가 들어왔다.</li>
                 <li>기분이 태도가 되지않으려면</li>
                 <li>기억전달자</li>
-                <li>미드나잇 라이브러리</li>
-                
+                <li >미드나잇 라이브러리</li>
+                <li>스물아홉 생일, 1년후 죽기로 결심했다</li>
+            </ul></ul>
 
-                <br><hr>
-            </ol>
-            <li><h3>읽고싶은 책</h3></li>
-            <ol>
+            <ul id="name" style=" display:inline-block;"><li><h3>읽고싶은 책</h3></li>
+            <ul>
                 <li>미래와 만날 준비</li>
                 <li>청소년의 비자살적 자해에 관한 연구</li>
                 <li>데일카네기 인간관계론/데일카네기 처세술</li>
@@ -35,7 +60,6 @@
                 <li>가짜감정</li>
                 <li>별을 쫒는 아이</li>
                 <li>종이여자</li>
-                <li>스물아홉 생일, 1년후 죽기로 결심했다</li>
                 <li>역행자</li>
                 <li>방랑기</li>
                 <li>네가 마지막으로 남긴 노래</li>
@@ -45,7 +69,7 @@
                 <li>앨리스 죽이기</li>
                 <li>봉제인형 살인사건</li>
                 <li>앵무새 죽이기</li>
-            </ol>
-        </ul>
+            </ul></ul>
+        </div></div>
     </body>
 </html>
