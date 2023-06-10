@@ -4,14 +4,22 @@
         <link rel="stylesheet" href="web.css">
         <script src="colors.js"></script>
     </head>
-    <body>
+    <body onload="startClock()">
         <h2><a href="intro.html" >자기소개</a></h2> <!--저는 AI컴퓨터 정보학과 1학년 양민지입니다!-->
         <input id="night_day" type="button" value="night" onclick="
     nightDayHandler(this);
-  ">
-        <hr>
+    ">
+        
+  <hr>
   <div id="clock"></div>
+  <div id="current_date"> 
   <script>
+ date = new Date();
+    year = date.getFullYear();
+    month = date.getMonth() + 1;
+    day = date.getDate();
+    document.getElementById("current_date").innerHTML = year + "/" + month + "/" + day;
+    
     function startClock() {
         let clock = document.getElementById("clock");
         timeout(clock);
