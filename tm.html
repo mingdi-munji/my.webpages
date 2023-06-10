@@ -1,34 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="web.css">
-    <script src="colors.js"></script>
-</head>
-
-<body>
-    <h2><a href="intro.html" target="lower" >자기소개</a></h2> <!--저는 AI컴퓨터 정보학과 1학년 양민지입니다!-->   
-    <input id="night_day" type="button" value="night" onclick="
-nightDayHandler(this);
-">     
-        <hr>
-        <div id="grid">
+<html>
+    <head>
+        <link rel="stylesheet" href="web.css">
+        <script src="colors.js"></script>
+    </head>
+    <body>
+        <h2><a href="intro.html">자기소개</a></h2> <!--저는 AI컴퓨터 정보학과 1학년 양민지입니다!-->
+        <input id="night_day" type="button" value="night" onclick="
+    nightDayHandler(this);
+  ">
+            <hr>
+            <div id="grid">
+                <div class="article">
+                
+                    <ol id="name">
+                    <li><a href="things.html" >취미 및 좋아하는 것</a></li>
+                    <li><a href="vision.html" >목표/비전</a></li>
+                    <li><a href="character.html" >성격/특징</a></li>
+                    <li><a href="book.html" >읽었던 책 + 읽고싶은 책</a></li>
+                    <li><a href="webcoding note.html" >웹코딩 복습</a></li>
+                    <li><a href="java script note.html" >java관련 내용복습</a></li>
+                    <li><a href="tm.html">Teachable Machine</a></li>
+                    </ol></div>
             
-                <ol id="name">
-                <li><a href="things.html" >취미 및 좋아하는 것</a></li>
-                <li><a href="vision.html" >목표/비전</a></li>
-                <li><a href="character.html" >성격/특징</a></li>
-                <li><a href="book.html" >읽었던 책 + 읽고싶은 책</a></li>
-                <li><a href="webcoding note.html" >웹코딩 복습</a></li>
-                <li><a href="java script note.html" >java관련 내용복습</a></li>
-                <li><a href="tm.html">Teachable Machine</a></li>
-                </ol>
-        </div>
-    <div class="article">
-    <div>Teachable Machine Model</div>
+                    <div class="article">
+                        <div>Teachable Machine Model</div>
     <button type="button" onclick="init()">Start</button>
     <div id="webcam-container"></div>
     <div id="label-container"></div>
@@ -93,7 +89,7 @@ nightDayHandler(this);
             }
         }
         init();
-    </script></div>  
-</body>
+    </script>
+                </div></div>
+    </body>
 </html>
-
