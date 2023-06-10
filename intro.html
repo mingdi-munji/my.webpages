@@ -9,6 +9,20 @@
         <input id="night_day" type="button" value="night" onclick="
     nightDayHandler(this);
   ">
+        <hr>
+  <div id="clock"></div>
+  <script>
+    function startClock() {
+        let clock = document.getElementById("clock");
+        timeout(clock);
+    }
+    function timeout(obj) {
+        let current = new Date();
+        obj.innerHTML = current.toLocaleTimeString();
+        setTimeout("timeout(clock)",1000);
+    }
+</script>
+        
             <hr>
             <div id="grid">
                 <div class="article">
