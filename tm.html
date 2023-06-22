@@ -82,10 +82,6 @@
     
             // append elements to the DOM
             document.getElementById("webcam-container").appendChild(webcam.canvas);
-            labelContainer = document.getElementById("label-container");
-            for (let i = 0; i < maxPredictions; i++) { // and class labels
-                labelContainer.appendChild(document.createElement("div"));
-            }
         }
     
         async function loop() {
@@ -99,23 +95,15 @@
             // predict can take in an image, video or canvas html element
             const prediction = await model.predict(webcam.canvas);
             if(prediction[0].probability>0.5){
-                console.log('night');
                 document.querySekector('body').style.backgroundColor = 'white';
                 document.querySekector('body').style.color = 'black';
             }
             else{
-                console.log('day');
                 document.querySekector('body').style.backgroundColor = 'black';
                 document.querySekector('body').style.color = 'white';
-            }
-            for (let i = 0; i < maxPredictions; i++) {
-                const classPrediction =
-                    prediction[i].className + ": " + prediction[i].probability.toFixed(2);
-                labelContainer.childNodes[i].innerHTML = classPrediction;
             }
         }
         init();
     </script>
-                </div></div>
     </body>
 </html>
