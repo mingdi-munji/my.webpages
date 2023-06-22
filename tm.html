@@ -47,8 +47,7 @@
             
                     <div class="article" style="display: inline-block;">
                         <div>Teachable Machine Model</div>
-    <button type="button" onclick="init()">Start</button>
-    <div id="webcam-container"></div>
+    <div style="position: absolute;" id="webcam-container"></div>
     <div id="label-container"></div>
     <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@latest/dist/teachablemachine-image.min.js"></script>
@@ -94,13 +93,16 @@
         async function predict() {
             // predict can take in an image, video or canvas html element
             const prediction = await model.predict(webcam.canvas);
-            if(prediction[0].probability>0.5){
-                document.querySekector('body').style.backgroundColor = 'white';
-                document.querySekector('body').style.color = 'black';
+            console.log(prediction[0].probability);
+            if(prediction[0].probability > 0.5){
+                console.log('night')
+                document.querySelector('body').style.backgroundColor = 'black';
+                document.querySelector('body').style.color = 'white';
             }
             else{
-                document.querySekector('body').style.backgroundColor = 'black';
-                document.querySekector('body').style.color = 'white';
+                console.log('day')
+                document.querySelector('body').style.backgroundColor = 'white';
+                document.querySelector('body').style.color = 'black';
             }
         }
         init();
