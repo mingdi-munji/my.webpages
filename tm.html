@@ -100,9 +100,13 @@
             const prediction = await model.predict(webcam.canvas);
             if(prediction[0].probability>0.5){
                 console.log('night');
+                document.querySekector('body').style.backgroundColor = 'white';
+                document.querySekector('body').style.color = 'black';
             }
             else{
                 console.log('day');
+                document.querySekector('body').style.backgroundColor = 'black';
+                document.querySekector('body').style.color = 'white';
             }
             for (let i = 0; i < maxPredictions; i++) {
                 const classPrediction =
